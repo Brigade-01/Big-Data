@@ -48,7 +48,7 @@ def main():
         st.markdown("""---""")
     # Check for labels in the data and set session state
         if 'label' in data.columns:
-            st.warning("Το αρχείο περιέχει ετικέτες. Θα εκτελεστεί μόνο η διαδικασία ομαδοποίησης (clustering).")
+            st.warning("Το αρχείο περιέχει ετικέτες. Μπορείτε να εκτελέσετε τις Προσομοίωσεις clustering και classification.")
             st.session_state.has_labels = True
         else:
             st.session_state.has_labels = False
